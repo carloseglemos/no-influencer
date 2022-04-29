@@ -1,2 +1,8 @@
 
-<h1>Welcome to the Influencer free social network</h1>
+<h1>Welcome to a Influencer free social network</h1>
+<ul>
+<% @users.each do |user| %>
+<li> <%= user.email %> </li>
+<li> <%= user.city %> </li>
+<% end %>
+</ul>
