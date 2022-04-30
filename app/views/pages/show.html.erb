@@ -2,3 +2,5 @@
 <p>Name: <%= @user.name %></p>
 <p>City: <%= @user.city  %></p>
 <p>Email <%= @user.email %></p>
+
+<%= link_to "Remove this user", user_path, method: :delete%>
