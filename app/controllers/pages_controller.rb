@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+  def home
+  @user
+  end
+
   def index
     @users = User.all
   end
@@ -30,7 +34,7 @@ class PagesController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to users_path
+    redirect_to home_path
   end
 
   private
