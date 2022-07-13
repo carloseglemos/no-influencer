@@ -44,5 +44,4 @@ class PagesController < ApplicationController
   def user_params
   params.require(:user).permit(:name, :city, :email)
   end
-
 end
